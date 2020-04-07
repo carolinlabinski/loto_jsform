@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<title>Loto</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+	</head>
+
+	<body>
+		<div class="text-center mt-5">
+			<h3>Merci de remplir le formulaire pour jouer au loto!</h3>
+		</div>
+
+		<form
+			name="myForm"
+			onsubmit="return checkLoto()"
+			class="container"
+			id="form"
+		>
+			<div class="form-group">
+				<label for="fname">Prénom:</label><br />
+				<input type="text" id="fname" name="fname" /><br /><br />
+				<p id="notice_firstname"></p>
+			</div>
+
+			<div class="form-group">
+				<label for="lname">Nom:</label><br />
+				<input type="text" id="lname" name="lname" /><br /><br />
+				<p id="notice_lastname"></p>
+			</div>
+
+			<div class="form-group">
+				<label for="address">Adresse mail:</label><br />
+				<input
+					type="email"
+					id="email"
+					name="email"
+					required
+					placeholder="user@gmail.com"
+				/><br /><br />
+				<p id="notice_email"></p>
+			</div>
+
+			<div class="form-group">
+				<label for="quantity">Chiffre 1 (entre 1 et 50):</label><br />
+				<input type="number" id="number1" name="number1" min="1" max="50" />
+			</div>
+
+			<div class="form-group">
+				<label for="quantity">Chiffre 2 (entre 1 et 50):</label><br />
+				<input type="number" id="number2" name="number2" min="1" max="50" />
+			</div>
+
+			<div class="form-group">
+				<label for="quantity">Chiffre 3 (entre 1 et 50):</label><br />
+				<input type="number" id="number3" name="number3" min="1" max="50" />
+			</div>
+
+			<div class="form-group">
+				<label for="quantity">Chiffre 4 (entre 1 et 50):</label><br />
+				<input type="number" id="number4" name="number4" min="1" max="50" />
+			</div>
+
+			<div class="form-group">
+				<label for="quantity">Chiffre 5 (entre 1 et 50):</label><br />
+				<input type="number" id="number5" name="number5" min="1" max="50" />
+			</div>
+
+			<div class="form-group">
+				<label for="quantity">Chiffre 6 (entre 1 et 50):</label><br />
+				<input type="number" id="number6" name="number6" min="1" max="50" />
+			</div>
+
+			<div class="form-group">
+				<button type="submit" class="btn btn-primary">Jouer!</button
+				><br /><br />
+				<p id="demo"></p>
+			</div>
+		</form>
+	</body>
+
+	<script src="indextest.js"></script>
+</html>
