@@ -38,7 +38,7 @@ function checkLoto() {
 
 	if (email.length < 8 || email.length > 30) {
 		alert(
-			"L'adresse mail 'est pas valide. Elle doit conternir entre 8 et 30 charactères."
+			"L'adresse mail n'est pas valide. Elle doit conternir entre 8 et 30 charactères."
 		);
 		return false;
 	}
@@ -47,7 +47,7 @@ function checkLoto() {
 	var resultat = reg_syntax_email.test(email);
 	if (resultat == false) {
 		alert(
-			"L'adresse mail 'est pas valide. Elle doit conternir un @ et un point et avoir 2-3 lettres après le point."
+			"L'adresse mail n'est pas valide. Elle doit conternir un @ et un point et avoir 2-3 lettres après le point."
 		);
 		return false;
 	}
