@@ -71,8 +71,6 @@ function checkLoto() {
 		return false;
 	}
 
-	console.log(lotoNumber1);
-
 	if (
 		lotoNumber1 == random1 &&
 		lotoNumber2 == random2 &&
@@ -83,7 +81,7 @@ function checkLoto() {
 	) {
 		alert("Bravo vous avez gagné");
 	} else {
-		alert("Vous avez perdu.");
+		alert("Vous avez perdu. Cliquer OK pour voir les nombres gagnants:");
 	}
 
 	var random_array = [random1, random2, random3, random4, random5, random6];
@@ -103,11 +101,11 @@ function checkLoto() {
 			array_match.push(loto_array[i]);
 		}
 	}
+	array_match.forEach((element) => console.log(element));
 
 	array_match.forEach(function (item) {
 		alert("Matches:" + item);
 	});
 
 	console.log(array_match);
-	console.log(checkLoto());
 }
