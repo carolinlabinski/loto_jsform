@@ -81,7 +81,7 @@ function checkLoto() {
 	) {
 		alert("Bravo vous avez gagné");
 	} else {
-		alert("Vous avez perdu. Cliquer OK pour voir les nombres gagnants:");
+		alert("Vous avez perdu. Cliquer OK pour voir s'il y des nombres gagnants:");
 	}
 
 	var random_array = [random1, random2, random3, random4, random5, random6];
@@ -102,6 +102,7 @@ function checkLoto() {
 		}
 	}
 	array_match.forEach((element) => console.log(element));
+	// var x = array_match.toString();
 
 	array_match.forEach(function (item) {
 		alert("Matches:" + item);
